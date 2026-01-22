@@ -9,3 +9,14 @@
 * GET : récupérer une ressource-paramètres.
 * POST : créer une ressource.
 
+
+== Identité - KYC ( Know Your Customer)
+
+* Usurpation d'identité
+* Blanchiment
+
+Il y'a plusieurs moyens de prouver son identité 
+== Authentification
+* En ligne 
+1. Scan
+2. Reconnaissance Faciale
