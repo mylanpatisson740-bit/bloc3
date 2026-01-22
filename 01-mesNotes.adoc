@@ -1,6 +1,7 @@
-				GITHUB
+= GITHUB
 
--Maintenance évolutive
--Partage et collaboration
--Tous les formats
--Productivité | ADOC ( ASCII DOC) / Markdown (Langage ASCII)  
+Maintenance évolutive
+Partage et collaboration
+Tous les formats
+Productivité | ADOC ( ASCII DOC) / Markdown (Langage ASCII)  
+
