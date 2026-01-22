@@ -5,4 +5,7 @@
 * Tous les formats.
 * Productivité | ADOC ( ASCII DOC) / Markdown (Langage ASCII).  
 
+== HTTP Stateless
+* GET : récupérer une ressource-paramètres.
+* POST : créer une ressource.
 
