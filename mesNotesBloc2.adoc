@@ -1,12 +1,26 @@
 = Conception et développement d'application
+
 * Git
 * Php
 * Composer
 
-== Si Git/Php/Composer ne marche pas
+== Si Git/Php/Composer ne marche pas au moment de la vérification de leur version
 
-1.Aller dans variables environnement système.
+
+1. Aller dans variables environnement système.
+
 2. Cliquez sur variables d'environnement.
-3. Nouveau puis parcourir
+
+3. Cliquer sur PATH puis modifier.
+
+3. Parcourir.
+
 4. Chercher l'executable.
-5. Fermez CMD puis rouvrir
+
+5. Fermez CMD puis rouvrir.
+
+== Clone
+
+1. Allez dans un répertoire chosi
+2. Ouvrir le CMD sur le répertoire actuel
+3. Git clone et l'adresse du GIT
