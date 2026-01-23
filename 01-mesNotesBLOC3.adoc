@@ -9,6 +9,7 @@
 * GET : récupérer une ressource-paramètres.
 * POST : créer une ressource.
 
+= Le Triptyque AAA
 
 == Identité - KYC ( Know Your Customer)
 
@@ -25,5 +26,8 @@ Il y'a plusieurs moyens de prouver son identité.
 
 2. Reconnaissance Faciale
 
+== Autorisation 
+
+* Principes de moindre privilège
 
 
