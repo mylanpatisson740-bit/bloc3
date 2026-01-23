@@ -8,19 +8,41 @@
 
 
 1. Aller dans variables environnement système.
-
 2. Cliquez sur variables d'environnement.
-
 3. Cliquer sur PATH puis modifier.
-
-3. Parcourir.
-
-4. Chercher l'executable.
-
-5. Fermez CMD puis rouvrir.
+4. Parcourir.
+5. Chercher l'executable.
+6. Fermez CMD puis rouvrir.
 
 == Clone
 
 1. Allez dans un répertoire chosi
 2. Ouvrir le CMD sur le répertoire actuel
 3. Git clone et l'adresse du GIT
+
+= POO
+Une *CLASS* est un ensemble d'attributs et de méthodes (portée(type) un nom).
+
+* Portée = public/protected/private
+
+* Méthodes = fonctions liées à la class 
+
+1. Constructeur, Afficheur, Acceseurs
+
+2. Méthodes définis et conçus par le développeur
+
+* Signature
+1. Portée
+2. Mot clef function
+3. Nom de la fonction
+4. Paramètres
+
+== Instanciation d'une classe
+$instance = *new* NomClasse(paramètres);
+
+== Opérateur
+* + Addition
+* - Soustraction
+* ==  Comparaison (PHP)
+* === Comparaison Valeur et Types (PHP)
+* --> Accesseur (PHP)
