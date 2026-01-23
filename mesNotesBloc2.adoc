@@ -20,7 +20,7 @@
 2. Ouvrir le CMD sur le répertoire actuel
 3. Git clone et l'adresse du GIT
 
-= POO
+= POO (Programmation Orientée Objet)
 Une *CLASS* est un ensemble d'attributs et de méthodes (portée(type) un nom).
 
 * Portée = public/protected/private
@@ -32,7 +32,7 @@ Une *CLASS* est un ensemble d'attributs et de méthodes (portée(type) un nom).
 2. Méthodes définis et conçus par le développeur
 
 * Signature
-1. Portée
+1. Portée              
 2. Mot clef function
 3. Nom de la fonction
 4. Paramètres
@@ -46,3 +46,21 @@ $instance = *new* NomClasse(paramètres);
 * ==  Comparaison (PHP)
 * === Comparaison Valeur et Types (PHP)
 * --> Accesseur (PHP)
+
+== Etre (5% du code)
+* Héritage = une classe peut hériter d'une autre (en utilisant *extends*)
+
+1. Récupère tous ses attributs                
+2. Récupère toutes ses méthodes
+3. Peut ajouter des attributs et méthodes
+4. Peut redéfinir des méthodes
+
+
+== Conventions
+* Noms de *classes* commencent par une majuscule
+* Noms de variables et d'objets commencent par une minuscule
+
+== Avoir 
+
+
+
