@@ -1,1 +1,12 @@
+= Création
+
+1.Copie commande git remote
+
+2.Renomme origin
+
+3.git add
+
+4.git commit -n "une phrase a mettre"
+
+5.git push -u (nom donner a la place de origin)
 
