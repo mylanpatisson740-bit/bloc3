@@ -16,9 +16,14 @@
 * Blanchiment
 
 Il y'a plusieurs moyens de prouver son identité.
+
 == Authentification
+
 * En ligne 
+
 1. Scan
+
 2. Reconnaissance Faciale
+
 
 
