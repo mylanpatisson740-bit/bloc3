@@ -1,1 +1,37 @@
+= Theme 1 : Vocabulaire et concepts POO
 
+1.C'est  quoi une classe en POO?
+
+un modèle/plan pour créer des objets
+
+2.C'est quoi une Instance?
+
+Un objet créer a partir d'une classe
+
+3.Encapsulation maximal
+
+private
+
+
+5.Extends
+
+C'est pour l'héritage
+
+6.Comment on accede a l'attibrut $ip
+
+$this -> ip
+
+7.méthode maagique lors du newMaclasse()
+
+constructeur
+
+8.Dans une classe enfant comment appeler le constructeur
+
+parent::__construct
+
+9.Affiche le resultat d'une methode qui retourne un string
+echo$objet->maMethode();
+
+10.Synxtaxe pour instancier un objet?
+
+$obj = new classe();
