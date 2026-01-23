@@ -1,1 +1,12 @@
+= Conception et développement d'application
+* Git
+* Php
+* Composer
 
+== Si Git/Php/Composer ne marche pas
+
+1.Aller dans variables environnement système.
+2. Cliquez sur variables d'environnement.
+3. Nouveau puis parcourir
+4. Chercher l'executable.
+5. Fermez CMD puis rouvrir
