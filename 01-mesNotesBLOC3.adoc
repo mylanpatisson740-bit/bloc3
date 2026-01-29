@@ -31,3 +31,21 @@ Il y'a plusieurs moyens de prouver son identité.
 * Principes de moindre privilège
 
 
+
+= Mutilidae
+
+== Client
+
+Google Chrome ( Navigateur internet)
+
+== Serveur http
+
+Apache
+
+== Application
+
+Php   ( Spring, CH)
+
+== SGBD (Système de gestion de base de données)
+
+MySQL (Oracle, SQL server)
