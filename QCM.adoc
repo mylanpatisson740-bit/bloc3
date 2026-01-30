@@ -1,37 +1,60 @@
 = Theme 1 : Vocabulaire et concepts POO
 
-1.C'est  quoi une classe en POO?
-
+1.*C'est  quoi une classe en POO?*
 un modèle/plan pour créer des objets
 
-2.C'est quoi une Instance?
-
+2.*C'est quoi une Instance?*
 Un objet créer a partir d'une classe
 
-3.Encapsulation maximal
-
+3.*Encapsulation maximal*
 private
 
 
-5.Extends
-
+5.*Extends*
 C'est pour l'héritage
 
-6.Comment on accede a l'attibrut $ip
-
+6.*Comment on accede a l'attibrut $ip*
 $this -> ip
 
-7.méthode maagique lors du newMaclasse()
-
+7.*méthode maagique lors du newMaclasse()*
 constructeur
 
-8.Dans une classe enfant comment appeler le constructeur
-
+8.*Dans une classe enfant comment appeler le constructeur*
 parent::__construct
 
-9.Affiche le resultat d'une methode qui retourne un string
+9.*Affiche le resultat d'une methode qui retourne un string*
 echo$objet->maMethode();
 
-10.Synxtaxe pour instancier un objet?
-
+10.*Synxtaxe pour instancier un objet?*
 $obj = new classe();
+
+= Theme 3 : Infrastructure
+11.*A quoi sert le composer ?*
+a gere les dependances
+
+12.*Pourquoi utiliser des namespaces ?*
+Pour organiser les classes et éviter les conflits de noms
+
+13.*Dans composer.json APP\\":"src/"?*
+Les classes commençant par APP sont ranger dans src/
+
+14.*Quelle commande a faire si on modifie l'autoload dans composer.json*
+Composer dump-autoload
+
+15.*Anti-Pattern (mauvaise pratique) vu en cours est:*
+Créer des Stetters sans réflechir
+
+16.*Pourquoi utilise t-on le typage (ex:'string$ip , 'int$port') dans nos classes?*
+Pour aider les développeurs a comprendre ce que la méthode attend comme données
+
+17.*Concernant l'héritage c'est quoi qui est vrai*
+
+- Un objet de la classe serveur est aussi considérer comme une instance EquipmentReseau
+
+- La classe serveur hérite des méthodes public et protected du parents
+
+- La classe peut redéfinir une méthode du parents
+
+19.*Si je veux une fonctionnalités de LOGS c'est quoi les bonnes pratiques*
+
+Utilise une méthode
