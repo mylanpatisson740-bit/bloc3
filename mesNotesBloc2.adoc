@@ -60,7 +60,8 @@ $instance = *new* NomClasse(paramètres);
 * Noms de *classes* commencent par une majuscule
 * Noms de variables et d'objets commencent par une minuscule
 
-== Avoir 
+== Avoir (95% du code)
+* Composition (les attributs)
 
 
 
