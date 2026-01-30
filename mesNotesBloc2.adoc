@@ -63,5 +63,12 @@ $instance = *new* NomClasse(paramètres);
 == Avoir (95% du code)
 * Composition (les attributs)
 
+= Méthodes
+== Gestion erreurs et  exceptions
+
+1. Préventif --> avant l'éxécution , anticiper
+2. Curatif --> Lorsque l'erreur ou l'exception se produit
+
+2.1 Si une instruction est susceptible de générer une Error ou Exception on le place dans un bloc: try{] , catch()
 
 
