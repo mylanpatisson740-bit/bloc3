@@ -56,5 +56,27 @@ Pour aider les développeurs a comprendre ce que la méthode attend comme donné
 - La classe peut redéfinir une méthode du parents
 
 19.*Si je veux une fonctionnalités de LOGS c'est quoi les bonnes pratiques*
-
 Utilise une méthode
+
+= Theme 4 Héritage et Composition:
+
+1.*Pourquoi dit-on favoriser l'héritage*
+Car la composition est flexible
+
+2.*Dans la phrase " un serveur a des services" c'est quoi la relation?*
+Composition/ Agrégation
+
+3.*Comment pn stocke plusieurs services dans un objet services?*
+On utlise un tableau comme attribut de la classe
+
+4.*Si je supprime l'objet serveur que se passe t-il pour les objets services qu'il contient?*
+Ils sont supprimer de la mémoire aussi
+
+
+5.*Vous avez une classe utilisateur et vous voulez gérer ses adresses de livraison. Quellle est la best pratice selon la logique de composition?*
+
+-Je créer une classe Adresse indépendante
+
+-Dans utilisateur j'ajoute un private array $adresses pour stocker les adresses
+
+            
