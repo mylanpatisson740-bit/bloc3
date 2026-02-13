@@ -79,4 +79,8 @@ Ils sont supprimer de la mémoire aussi
 
 -Dans utilisateur j'ajoute un private array $adresses pour stocker les adresses
 
+6.*Dans le code public functon ajouterService que se passe t-il?*
+
+- C'est de l'injection de dépendance
+- 
             
