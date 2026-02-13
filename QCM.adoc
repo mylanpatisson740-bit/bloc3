@@ -79,8 +79,26 @@ Ils sont supprimer de la mémoire aussi
 
 -Dans utilisateur j'ajoute un private array $adresses pour stocker les adresses
 
-6.*Dans le code public functon ajouterService que se passe t-il?*
+6.*Dans le code public functon ajouterService que se passe t-il?* *ANNULER*
 
 - C'est de l'injection de dépendance
-- 
-            
+
+7.*Quel est le problème majeur de l'héritage multiple*
+
+-Le problème du diamant : si 'web' et  'Sql' ont une méthode start il commence par laquelle?
+
+-Cela crée une ambiguite 
+
+8.*Si ont a fais Serveur extends Windows , Pourquoi c'est un erreur?*
+
+-Parceque si je passe sur linux je dois casser toute ma classe
+
+-Serveur est du matériel et windows du concept logiciel la relation "Est un" est fausse
+
+9.*Quels sont les avantages concrets de la Composistion
+
+-*Flexibilité* :
+
+-*Simplicité* : On évite de créer 50 classes
+
+-*Testabilité* : on peut tester la classe Service sans serveur
