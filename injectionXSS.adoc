@@ -1,0 +1,4 @@
+=== Les 3 types de XSS
+1.  **Reflected XSS (Réfléchi) :** L'attaque passe par un lien piégé. Le serveur "reflète" l'injection immédiatement (ex: un message d'erreur ou une recherche). C'est temporaire.
+2.  **Stored XSS (Stocké) :** L'attaque est enregistrée sur le serveur (ex: commentaire, profil). Chaque visiteur de la page sera infecté. C'est la forme la plus dangereuse.
+3.  **DOM-based XSS :** L'attaque se passe uniquement côté client (dans le navigateur), souvent à cause d'un mauvais script JS qui manipule l'URL sans passer par le serveur.
