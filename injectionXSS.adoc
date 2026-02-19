@@ -1,3 +1,9 @@
+== Introduction théorique
+
+Contrairement aux Injections SQL qui visent le serveur (vol de base de données), le **Cross-Site Scripting (XSS)** vise les **utilisateurs** du site.
+
+Le principe est simple : l'attaquant injecte du code **JavaScript** malveillant dans une page web. Ce code sera ensuite exécuté par le navigateur de la victime comme s'il faisait légitimement partie du site.
+
 === Les 3 types de XSS
 1.  **Reflected XSS (Réfléchi) :** L'attaque passe par un lien piégé. Le serveur "reflète" l'injection immédiatement (ex: un message d'erreur ou une recherche). C'est temporaire.
 2.  **Stored XSS (Stocké) :** L'attaque est enregistrée sur le serveur (ex: commentaire, profil). Chaque visiteur de la page sera infecté. C'est la forme la plus dangereuse.
