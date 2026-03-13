@@ -1,3 +1,38 @@
-= Quels sont les objectifs principal des tests unitaires
+= QCM
 
-Automatiser la vérification du code
+1.*Quels sont les objectifs principal des tests unitaires*
+
+- Automatiser la vérification du code
+- Remplacer les tests manuels
+- Isoler chaque composant pour valider son comportement
+
+2.*Sur installation de PHPunit quelles pratique sont correctes*
+
+- On utilise composer require --dev phpunit/phpunit
+- --dev isole l'outil et sera installer seulement en dev et pas en production
+
+3.*Que signifie le cycle TDD*
+
+- On écrit dabord un test qui echoue
+- On ecrit le code minimal dans la classe /src
+- Refactor signifie une fois verte peut etre ameliorer
+
+4.*A quoi sert une assertion*
+
+- Comparer le résultat obtenu avec celui attendu
+- C'est le coeur du test si la barre est vert ou rouge
+
+5.*Comment s'organise mes fichier tests*
+
+- lES TEST sont placer dans le fichier test
+- le nom du fichier test se termine par Test.php
+
+6.*Coment on lance des test PHPUNIT*
+
+- En executant le binaire installer via la commande vendor/bin/phpunit
+- la commande parcout le dossier configurer et tout les test
+
+7.*lors d'une ecriture d'un test PHPunit*
+
+- La classe de test doit heriter de la classe de basse
+- Chaque methode doit voir son nom commencer par le mot test
