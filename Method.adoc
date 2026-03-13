@@ -1,5 +1,7 @@
 = Méthode AGILE
 
+*Coût* - Qualité - **Délai**
+
 == DEF
 
 TDD = Test Driven Development (Développement piloté par les tests)
