@@ -1,0 +1,3 @@
+= Quels sont les objectifs principal des tests unitaires
+
+Automatiser la vérification du code
