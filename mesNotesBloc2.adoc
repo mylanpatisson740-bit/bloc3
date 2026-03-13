@@ -71,4 +71,17 @@ $instance = *new* NomClasse(paramètres);
 
 2.1 Si une instruction est susceptible de générer une Error ou Exception on le place dans un bloc: try{] , catch()
 
+= Persistence
+== Client
 
+Cookies : + très utilisé , - longueur limité peu sécurisé
+Storage
+
+JSON : + dif/valeur plus puissant , -pas sécurisé
+
+== Serveur
+audit -> logs texte
+
+Base de données : SQL, MySQL
+
+Sérialisation
