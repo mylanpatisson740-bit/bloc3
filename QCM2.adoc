@@ -36,3 +36,46 @@
 
 - La classe de test doit heriter de la classe de basse
 - Chaque methode doit voir son nom commencer par le mot test
+
+8.*Comment tester une classe réagis bien au mauvaise données*
+
+- On utilise la méthode $this->exceptException
+- Verifier que le code de sécurite (Fail fast) fait bien son travail
+- Apres la ligne exceptException PHPunit marquera le test comme échouer
+
+9.*C'est quoi un Mock*
+
+- Un faux objet créer pour simuler le comportement d'une dépendance complexe
+- Il permet de teser une classe de maniere isolé sans se soucier des systeme de l'entreprise
+
+10.*Quoi faire apres avoir lancer PHPunit on a une erreur Failed asserting that false is true*
+
+- Lire la trace d'erreur (stack Trace) pour identifier à quelle ligne l'assertion a echoué
+- Vérifier le code source de l'application dans /src car il peut etre un bug logique
+- Vérifier le code du test lui-même, surement erreur sur le scénario attendu
+
+= BASE DE DONNE
+1.*Pourquoi utiliser PDO plutot que mysqli*
+
+- PDO est agnostique
+- PDO integre nativement des requete preparé
+
+2.*l'objectif du design Pattern "repository"*
+
+- Séparer proprement la logique d'acces au données de la logique metier
+- Centraliser toutes les opérations de la base de donéees d'un objet dans une seule classe dedie
+
+3.*Comment les requete preparer (prepared statement) protège t-il?*
+
+- Elles séparent la structure de la requete SQL des données envoyées par l'utilisateur
+- Elles utilisent des marqueur (ex :hostname ou ?) pour insérer les variables de maniere neutre et inoffensive
+
+4.*Dans le cadre de notre architecture pourquoi il a fallu ajouter des Getters getHostname*
+
+- Parce que la classe ServeurRepository a besoin de lire les données encapsulté pour les sauvegarder
+- Pour respecter le principe de l'encapsulation on permet de lire les données sans autoriser leur modification directe
+
+5.*A quoi sert l'option \PDO::ATTR_ERRMODE =>\PDO::ERRMODE_EXCEPTION dans notre classe de connexion DATABASE*
+
+- Elle configure PDO pour qu'il lance une exception PHP si une erreur SQL survient
+- Elle permet au dev d'attraper les erreur SQL avec try_catch
