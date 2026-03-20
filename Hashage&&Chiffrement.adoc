@@ -1,1 +1,20 @@
+Hachage : Irréversible , Effet Boule de neige, Collision, rapide
 
+== Le Chiffrement Hybride en POO (Service Métier)
+
+Dans Mini-Nagios, nous voulons maintenant stocker le **Mot de Passe Root** de chaque serveur pour que l'application puisse s'y connecter plus tard.
+
+* Peut-on le hacher ? **NON.** Le hachage est irréversible, l'application ne pourrait plus lire le mot de passe pour s'en servir.
+* Peut-on le chiffrer en symétrique (AES) ? **DANGEREUX.** Si la clé AES (qui est sur le code source) fuite, tous les mots de passe sont compromis.
+
+
+
+**La Solution : Le Chiffrement Hybride.**
+
+1. On génère une clé symétrique (AES) aléatoire à la volée.
+2. On chiffre le mot de passe Root avec cette clé AES (très rapide).
+3. On chiffre la clé AES avec la **Clé Publique (RSA)** de l'entreprise.
+4. On stocke le tout en base. Seul le détenteur de la **Clé Privée (RSA)** pourra faire l'opération inverse.
+
+=== Le CryptoService (L'encapsulation de la complexité)
+La cryptographie avec la librairie `OpenSSL` de PHP est verbeuse. En POO, nous allons cacher cette complexité dans un **Service**.
