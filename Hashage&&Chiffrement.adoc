@@ -1,4 +1,4 @@
-Hachage : Irréversible , Effet Boule de neige, Collision, rapide
+Hachage : `Irréversible` , `Effet Boule de neige`, `Collision`, `rapide`
 
 == Le Chiffrement Hybride en POO (Service Métier)
 
