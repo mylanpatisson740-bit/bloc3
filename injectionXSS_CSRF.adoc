@@ -25,8 +25,7 @@ C'est la défense historique et la plus robuste.
 2. **Transmission :** Chaque formulaire sensible de l'application intègre ce jeton dans un champ caché.
 3. **Validation :** Lors de la soumission du formulaire (POST), le serveur compare le jeton reçu avec celui stocké en session. S'ils diffèrent ou si le jeton est absent, la requête est rejetée.
 
-3. Détail des protections étudiées
 
-Synchronizer Token Pattern : Le token CSRF est stocké en session côté serveur. Le formulaire contient un champ caché avec ce token. À la soumission, le serveur compare les deux.
+=== Synchronizer Token Pattern : Le token CSRF est stocké en session côté serveur. Le formulaire contient un champ caché avec ce token. À la soumission, le serveur compare les deux.
 
-Double Submit Cookie Pattern : Le token est généré côté serveur puis envoyé dans un cookie ET dans un champ caché du formulaire. À la réception, le serveur compare ces deux éléments fournis par le client.
+=== Double Submit Cookie Pattern : Le token est généré côté serveur puis envoyé dans un cookie ET dans un champ caché du formulaire. À la réception, le serveur compare ces deux éléments fournis par le client.
