@@ -122,4 +122,26 @@
 - A conserver l'étet de connexion de l'admin d'une page à l'autre car HTTP est sans état
 - A mémoriser l'ID de l'utilisateur après une authentification réusssie via le formulaire de login
 
-4.*Pourquoi utiliser le chiffrement hybride pour protéger les MDP
+4.*Pourquoi utiliser le chiffrement hybride pour protéger les MDP root de nos serveurs*
+
+- Pour combiner la rapiditer du chiffrement symétrique avec la sécurité du chifremment asymétrique
+- Parce que le asymétrique est trop lent seul ou inadapté 
+
+5.*Dans notre classe cryptoService le role de la cles RSA?*
+
+- Elle sert exclusivement a chiffre la clé symétrique
+- Elle peut être partager sur le serveur sans compromettre les données
+
+6.*Dans MVC role du Middleware*
+
+- Bloquer l'acces aux pages sensible
+- Centraliser la vérifiacation de la session pour ne pas avoir a réécrire la meme logique
+
+7.*Que doit faire verifierConnexion() si $_SESSION[admin_id] est vide*
+
+- Elle doit rediriger l'UE vers le login
+
+8.*Pourquoi OWASP classe les probleme d'authentification parmi les pires failles*
+
+- Une faille a ce niveau permet à un attaquant de contourner toute les sécurités
+- Parce que les erreurs d'implémentation sont courantes chez les devs
