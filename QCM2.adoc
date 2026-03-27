@@ -91,6 +91,7 @@
 - Le contrôleur orchestre l'action : recupere data POST, instancie l'objet metier puis donne au repository
 
 8.*Insert into...... (".$POST['ip'].") le problème est*
+
 - Faaille de sécurité injection SQL
 - Viole les bonnes pratiques vue en cours
 
@@ -104,3 +105,21 @@
 - Cela casse le principe de séparation des reponsabilités en mélangeant logique connexion et logique affichage
 - Si le MDP de la BDD change le dev devra le modifier dans tout les fichier plutot qu'a un seul endroit
 - Cela ignore la classe utilitaire DataBase::getConnection()
+
+= Cyber Auth
+
+1.*Pourquoi on ne doit plus utiliser MD5 ou SHA1*
+
+- Parce qu'ils sont considérer comme obsolète et vulnérable aux collision cryptographiques
+
+2.*Comment vérifier un MDP saisie correspond au hachage  BCRYPT stocké en BDD*
+
+- En utilisant la fonction PHP password_verify($mdp_saisi,$hash_bdd)
+- En laissant PHP extraire le sel inclus dans le hash BCRYPT pour faire la comparaison
+
+3.*A quoi sert le superglobale $_SESSION dans MiniNagos
+
+- A conserver l'étet de connexion de l'admin d'une page à l'autre car HTTP est sans état
+- A mémoriser l'ID de l'utilisateur après une authentification réusssie via le formulaire de login
+
+4.*Pourquoi utiliser le chiffrement hybride pour protéger les MDP
