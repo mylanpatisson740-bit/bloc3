@@ -79,3 +79,28 @@
 
 - Elle configure PDO pour qu'il lance une exception PHP si une erreur SQL survient
 - Elle permet au dev d'attraper les erreur SQL avec try_catch
+
+6.*Lorque vos devez récupere plusieur ligne d'une BDD quelle méthode PDO?*
+
+- -$stmt -> fetchAll()
+- L'appel a fetchAll() après avoir fait un query() ou execute()
+
+7.*Dans notre architecture en couche quelle est le cheminement correct des données lors de la création d'un routeur?*
+
+- Vue(FORMULAIRE HTML) -> Controleur -> Entité (new routeur)
+- Le contrôleur orchestre l'action : recupere data POST, instancie l'objet metier puis donne au repository
+
+8.*Insert into...... (".$POST['ip'].") le problème est*
+- Faaille de sécurité injection SQL
+- Viole les bonnes pratiques vue en cours
+
+9.*Le rôle du bloc try catch dans notre fichier traitement_routeur.php*
+
+- Intercepte les exceptions métier (ex : port invalide) 
+- Il empeche l'application de s'arreter et affiche une fatal error 
+
+10.*Si un dev écrit $pdo = new PDO a l'intérieur du fichier dashboard, pourquoi est-ce un anti-pattern*
+
+- Cela casse le principe de séparation des reponsabilités en mélangeant logique connexion et logique affichage
+- Si le MDP de la BDD change le dev devra le modifier dans tout les fichier plutot qu'a un seul endroit
+- Cela ignore la classe utilitaire DataBase::getConnection()
