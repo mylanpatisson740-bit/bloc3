@@ -1,3 +1,26 @@
 = API : Application Programming Interface
 
 Communication entre processus , pas un humain
+
+=== Les Verbes HTTP et le CRUD
+Une API REST utilise intelligemment les verbes du protocole HTTP pour définir l'action à réaliser sur une ressource :
+
+* **GET** : Lire (Read)
+* **POST** : Créer (Create)
+* **PUT / PATCH** : Mettre à jour (Update)
+* **DELETE** : Supprimer (Delete)
+
+
+Quand on crée une API, on ne renvoie pas d'erreurs avec `echo "Erreur"`. On utilise les codes officiels du protocole HTTP :
+
+* **200 OK** : Tout s'est bien passé.
+* **201 Created** : La ressource a été créée avec succès.
+* **400 Bad Request** : Les données envoyées par le client sont invalides (ex: IP fausse).
+* **401 Unauthorized** : Le client n'est pas identifié (Pas de clé API).
+* **404 Not Found** : La ressource demandée n'existe pas.
+* **500 Internal Server Error** : Le serveur PHP ou la base de données a planté.
+
+.Règle de sécurité
+====
+Une API REST est "Stateless" (Sans état). Elle ne gère pas les cookies et ne peut pas utiliser `$_SESSION`. Chaque requête vers l'API est totalement indépendante et doit prouver son identité.
+====
